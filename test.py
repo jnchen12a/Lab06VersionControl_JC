@@ -7,7 +7,11 @@ def encode(num):
     return return_num
 # Decoding function
 def decode(num):
-    pass
+    return_num = ''
+    for digit in num:
+        return_num = str(int(digit) - 3) + return_num
+
+    return return_num
 
 # Start of main if dunder
 if __name__ == '__main__':
